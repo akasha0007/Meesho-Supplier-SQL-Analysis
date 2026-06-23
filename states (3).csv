@@ -1,0 +1,39 @@
+state_id,state_name,region
+1,Himachal Pradesh,North
+2,West Bengal,East
+3,Andhra Pradesh,South
+4,Karnataka,South
+5,Punjab,North
+6,Andaman and Nicobar Islands,Other
+7,Tamil Nadu,South
+8,odisha,Other
+9,punjab,Other
+10,Up,Other
+11,Mumbai,Other
+12,Haryana,North
+13,Goa,West
+14,west Bangol,Other
+15,India,Other
+16,Uttar Pradesh,North
+17,Delhi,North
+18,Nehru   Colony,Other
+19,Odisha,East
+20,Chandigarh,Other
+21,Gujarat,West
+22,Orissa,Other
+23,Jammu and Kashmir,North
+24,Bihar,East
+25,seoni,Other
+26,Telangana,South
+27,Madhya Pradesh,Central
+28,MAHARASHTRA,Other
+29,Uttarakhand,North
+30,State Bank Of India,Other
+31,Arunachal Pradesh,East
+32,Maharashtra,West
+33,Assam,East
+34,Jharkhand,East
+35,Chhattisgarh,Central
+36,Kerala,South
+37,Rajasthan,North
+38,Others,Other
