@@ -110,7 +110,7 @@ returns        → RTO + return records only (56 rows)
 ### Query 9 — Net Profit per State (CTE)
 **Business Question:** After GST + shipping, what is actual profit per state?
 
-![Q9 Result](screenshots/q9_net_profit.png)
+![Q9 Result](screenshots/q9_net_profits.png)
 
 ---
 
