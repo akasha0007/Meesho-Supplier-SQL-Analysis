@@ -234,7 +234,7 @@ their losses without reading SQL output.
 - Revenue lost to RTO and returns is 80.48K out of 178.34K
 - Party Wear Gown is the top revenue product at 80K+
 - Uttar Pradesh is the top state by revenue
-- Free Size and Semi Stitched have highest return rates
+- Free Size and Semi Stitched have highest return rates 
 
 ### Tools Used
 - Power BI Desktop
