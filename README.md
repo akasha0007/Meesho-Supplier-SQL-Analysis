@@ -54,7 +54,7 @@ returns        → RTO + return records only (56 rows)
 ### Query 1 — Overall Order Status Summary
 **Business Question:** What % of orders are profitable vs lost?
 
-![Q1 Result](screenshots/q1_order_status.png)
+![Q1 Result]( screenshots/q1_order_status.png )
 
 ---
 
