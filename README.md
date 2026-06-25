@@ -208,7 +208,7 @@ their losses without reading SQL output.
 ![Page 4](screenshots/page4_size_return_analysis.png)
 
 **Page 5 — Profit Scorecard**
-![Page 5]screenshots/page5_profit_scorecard.png)
+![Page 5](screenshots/page5_profit_scorecard.png)
 
 ### DAX Measures Created
 | Measure | Formula Logic |
