@@ -172,3 +172,72 @@ README.md              → Project documentation
 ---
 
 *Resume Line: "Analyzed real Meesho supplier data (500+ records across 5 relational tables) to identify ₹85,764 revenue loss from RTO orders using MySQL — applied CTEs, window functions, multi-table JOINs and date functions to build a supplier health scorecard."*
+
+
+---
+
+## Power BI Dashboard — Meesho Supplier RTO Loss Dashboard
+
+### Problem Statement
+The same RTO loss problem is visualized interactively so that 
+any non-technical supplier or business manager can understand 
+their losses without reading SQL output.
+
+### Dashboard Pages
+
+| Page | Title | What it Shows |
+|------|-------|--------------|
+| 1 | Executive Summary | Total orders, gross revenue, delivery rate, weekly trend |
+| 2 | RTO & Loss Analysis | Where money is going, state wise RTO breakdown |
+| 3 | Product Performance | Top products by revenue and quantity sold |
+| 4 | Size & Return Analysis | Which sizes drive most returns |
+| 5 | Profit Scorecard | Net profit, delivery rate vs 70% target gauge |
+
+### Dashboard Preview
+
+**Page 1 — Executive Summary**
+![Page 1](screenshots/powerbi_page1_executive_summary.png)
+
+**Page 2 — RTO & Loss Analysis**
+![Page 2](screenshots/powerbi_page2_rto_loss_analysis.png)
+
+**Page 3 — Product Performance**
+![Page 3](screenshots/powerbi_page3_product_performance.png)
+
+**Page 4 — Size & Return Analysis**
+![Page 4](screenshots/powerbi_page4_size_return_analysis.png)
+
+**Page 5 — Profit Scorecard**
+![Page 5](screenshots/powerbi_page5_profit_scorecard.png)
+
+### DAX Measures Created
+| Measure | Formula Logic |
+|---------|--------------|
+| Total Orders | COUNT of all orders |
+| Delivered Orders | CALCULATE filtered by Delivered status |
+| RTO Orders | CALCULATE filtered by rto status |
+| Return Orders | CALCULATE filtered by Return status |
+| Delivery Rate % | Delivered / Total * 100 |
+| Return Rate % | (RTO + Returns) / Total * 100 |
+| Gross Revenue | SUM of meesho_price |
+| Revenue Lost | CALCULATE SUM filtered by rto and Return |
+| Net Profit | Revenue minus GST minus Shipping for Delivered orders |
+
+### Data Model
+- 5 tables connected using Star Schema
+- orders table is the central fact table
+- states, products, order_items, returns are dimension tables
+- Relationships built on sub_order_num and sku columns
+
+### Key Dashboard Findings
+- Delivery rate is only 27% vs target of 70%
+- Revenue lost to RTO and returns is 80.48K out of 178.34K
+- Party Wear Gown is the top revenue product at 80K+
+- Uttar Pradesh is the top state by revenue
+- Free Size and Semi Stitched have highest return rates
+
+### Tools Used
+- Power BI Desktop
+- DAX (Data Analysis Expressions)  
+- Star Schema data modelling
+- 5 relational tables from MySQL project
