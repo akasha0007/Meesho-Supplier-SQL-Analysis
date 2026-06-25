@@ -196,19 +196,19 @@ their losses without reading SQL output.
 ### Dashboard Preview
 
 **Page 1 — Executive Summary**
-![Page 1](screenshots/powerbi_page1_executive_summary.png)
+![Page 1](screenshots/page1_executive_summary.png)
 
 **Page 2 — RTO & Loss Analysis**
-![Page 2](screenshots/powerbi_page2_rto_loss_analysis.png)
+![Page 2](screenshots/page2_rto_loss_analysis.png)
 
 **Page 3 — Product Performance**
-![Page 3](screenshots/powerbi_page3_product_performance.png)
+![Page 3](screenshots/page3_product_performance.png)
 
 **Page 4 — Size & Return Analysis**
-![Page 4](screenshots/powerbi_page4_size_return_analysis.png)
+![Page 4](screenshots/page4_size_return_analysis.png)
 
 **Page 5 — Profit Scorecard**
-![Page 5](screenshots/powerbi_page5_profit_scorecard.png)
+![Page 5]screenshots/page5_profit_scorecard.png)
 
 ### DAX Measures Created
 | Measure | Formula Logic |
